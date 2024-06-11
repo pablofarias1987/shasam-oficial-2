@@ -1,4 +1,3 @@
-import { Typography } from "keep-react";
 import React from "react";
 
 const NAME = "Shasam Expertos en tratamientos de adicción al sexo";
@@ -13,22 +12,22 @@ export const Sexo = () => {
       <div>
        <div className="flex justify-center mx-32 items-center mt-8">
         <div className="flex-1">
-          {/* <Typography className="text-sky-400 text-5xl font-medium">
+          <h1 className="text-sky-400 text-5xl font-medium">
             {NAME}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo1}</Typography>
-            </Typography>
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo1}
+            </p>
  
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo2}</Typography>
-            </Typography>
-            <Typography className="text-sky-400 text-5xl font-medium">
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo2}
+            </p>
+            <h1 className="text-sky-400 text-5xl font-medium">
             {NAME1}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo3}</Typography>
-            </Typography> */}
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo3}
+            </p>
 </div></div>
       </div>    
     );

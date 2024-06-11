@@ -1,4 +1,3 @@
-import { Typography } from "keep-react";
 import React from "react";
 
 const NAME = "Shasam Expertos en tratamientos de adicción a la pasta base";
@@ -26,61 +25,61 @@ export const PastaBase= () => {
       <div>
        <div className="flex justify-center mx-32 items-center mt-8">
         <div className="flex-1">
-          {/* <Typography className="text-sky-400 text-5xl font-medium">
+          <h1 className="text-sky-400 text-5xl font-medium">
             {NAME}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo1}</Typography>
-            </Typography>
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo1}
+            </p>
 
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo2}</Typography>
-            </Typography>
-            <Typography className="text-sky-400 text-5xl font-medium">
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo2}
+            </p>
+            <h1 className="text-sky-400 text-5xl font-medium">
             {NAME1}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo3}</Typography>
-            </Typography>
-            <Typography className="text-sky-400 text-5xl font-medium">
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo3}
+            </p>
+            <h1 className="text-sky-400 text-5xl font-medium">
             {NAME2}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo4}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo5}</Typography>
-            </Typography>
-            <Typography className="text-sky-400 text-5xl font-medium">
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo4}
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo5}</p>
+            
+            <h1 className="text-sky-400 text-5xl font-medium">
             {NAME3}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo6}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo7}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo8}</Typography>
-            </Typography>
-            <Typography className="text-sky-400 text-5xl font-medium">
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo6}</p>
+            
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo7}</p>
+            
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo8}
+            </p>
+            <h1 className="text-sky-400 text-5xl font-medium">
             {NAME4}
-          </Typography>
-          <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo9}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo10}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo11}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo12}</Typography>
-            </Typography>
-            <Typography className="text-justify space-y-4 text-xl m-5">
-            <Typography>{parrafo13}</Typography>
-            </Typography> */}
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo9}
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo10}
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+           {parrafo11}
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo12}
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            {parrafo13}
+            </p>
             </div>
         </div>
       </div>

@@ -18,6 +18,9 @@ function Signup  ({
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
+    dni: '',
+    country: '',
+    phone: '',
     email: '',
     password: '',
     re_password: ''
@@ -26,6 +29,9 @@ function Signup  ({
   const { 
     first_name,
     last_name,
+    dni,
+    country,
+    phone,
     email,
     password,
     re_password
@@ -35,7 +41,7 @@ function Signup  ({
 
   const onSubmit = e =>{
     e.preventDefault();
-    signup(first_name, last_name, email, password, re_password);
+    signup(first_name, last_name, dni, country, phone, email, password, re_password);
     setAccountCreated(true);
     window.scrollTo(0,0)
   }
@@ -46,8 +52,8 @@ function Signup  ({
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             className="mx-auto h-12 w-auto"
-            src="logo_shasam.png"
-            alt="Workflow"
+            src="singin.png"
+            alt="SHASAM"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Registrarse</h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -63,7 +69,7 @@ function Signup  ({
             <form onSubmit={e=>onSubmit(e)} className="space-y-6">
               <div>
                 <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
-                  First Name
+                  Nombre
                 </label>
                 <div className="mt-1">
                   <input
@@ -78,7 +84,7 @@ function Signup  ({
               </div>
               <div>
                 <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">
-                  Last Name
+                  Apellido
                 </label>
                 <div className="mt-1">
                   <input
@@ -91,10 +97,54 @@ function Signup  ({
                   />
                 </div>
               </div>
-
+              <div>
+                <label htmlFor="dni" className="block text-sm font-medium text-gray-700">
+                  Rut
+                </label>
+                <div className="mt-1">
+                  <input
+                    name="dni"
+                    value={dni}
+                    onChange={e=>onChange(e)}
+                    type="text"
+                    required
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                  Direccion
+                </label>
+                <div className="mt-1">
+                  <input
+                    name="country"
+                    value={country}
+                    onChange={e=>onChange(e)}
+                    type="text"
+                    required
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                  Telefono
+                </label>
+                <div className="mt-1">
+                  <input
+                    name="phone"
+                    value={phone}
+                    onChange={e=>onChange(e)}
+                    type="text"
+                    required
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email address
+                  Correo
                 </label>
                 <div className="mt-1">
                   <input

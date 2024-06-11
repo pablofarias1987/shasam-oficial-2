@@ -85,7 +85,7 @@ export const CardsTratamiento = () => {
         </Link>
         </div>
         <div>
-        <Link to="/ludopatia">
+        <Link to="/ludopata">
           <img
             src="/ludopatia.png"
             className="bg-gray-600 w-24 h-24  rounded-full "
