@@ -156,7 +156,7 @@ const Search = ({
         <div>
             <Navbar/>
             <div className="bg-white">
-      <div>
+              <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
           <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setMobileFiltersOpen}>
@@ -600,7 +600,7 @@ const Search = ({
         </main>
       </div>
     </div>
-    <Footer/>
+
         </div>
     )
 }

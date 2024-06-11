@@ -139,20 +139,20 @@ const Dashboard =({
           <div className="flex flex-col flex-grow border-r border-gray-200 pt-5 bg-white overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
 
-            <Link
+            {/* <Link
                 to="/"
                 className="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
                 Regresar
-            </Link>
-            
-              <img
+            </Link> */}
+
+              {/* <img
                 className="h-8 w-auto"
                 src="LOGO_LETRAS_SHASAM_PNG.png"
                 alt="Workflow"
-              />
-              
-            </div>
+              /> */}
+
+            </div><br></br>
             <div className="mt-5 flex-grow flex flex-col">
               <nav className="flex-1 px-2 pb-4 space-y-1">
                 <DashboardLink/>
@@ -258,20 +258,20 @@ const Dashboard =({
             <dt className="text-sm font-medium text-gray-500">Full name</dt>
             <dd className="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
               <span className="flex-grow">{user.first_name} {user.last_name}</span>
-              
+
             </dd>
           </div>
 
-          
+
           <div className="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
             <dt className="text-sm font-medium text-gray-500">Email address</dt>
             <dd className="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
               <span className="flex-grow">{user.email}</span>
-              
+
             </dd>
           </div>
 
-         
+
         </dl>
       </div>
             </div>

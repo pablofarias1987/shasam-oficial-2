@@ -98,9 +98,9 @@ function classNames(...classes) {
     get_categories,
     categories,
     get_search_products,
-    logout, 
+    logout,
     total_items
-  }){ 
+  }){
 
   // eslint-disable-next-line
   const [redirect, setRedirect] = useState(false);
@@ -111,7 +111,7 @@ function classNames(...classes) {
     search: ''
   });
   const { category_id, search } = formData;
-  
+
   useEffect(() => {
     get_categories()
   }, [])
@@ -122,16 +122,16 @@ function classNames(...classes) {
       get_search_products(search, category_id);
       setRender(!render);
     }
-  
+
     if(render){
       return <Navigate to='/search' />;
     }
-  
+
     const logoutHandler = () => {
       logout()
       setRedirect(true);
     }
-  
+
     if (redirect){
       window.location.reload(false)
       return <Navigate to='/' />;
@@ -172,7 +172,7 @@ function classNames(...classes) {
                 </Link>
               )}
             </Menu.Item>
- 
+
             <form method="POST" action="#">
               <Menu.Item>
                 {({ active }) => (
@@ -193,7 +193,7 @@ function classNames(...classes) {
       </Transition>
     </Menu>
     )
-    
+
     const guestLinks = (
       <Fragment>
         <Link to="/login" className="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -215,7 +215,7 @@ function classNames(...classes) {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
             <Link to="/" className="flex">
-              <span className="sr-only">Workflow</span>
+              <span className="sr-only">SHASAM</span>
               <img
                 className="h-8 w-auto sm:h-10"
                 src="logo_shasam.png"
@@ -237,25 +237,36 @@ function classNames(...classes) {
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
             <NavLink to="/shop" className={window.location.pathname==='/search'?' text-base font-medium text-gray-500 hover:text-gray-900':'mt-2 text-base font-medium text-gray-500 hover:text-gray-900'}>
-                SHASAM 
+                SHASAM
 </NavLink>
-              {window.location.pathname==='/search'?<></>:<SearchBox 
+              {/* {window.location.pathname==='/search'?<></>:<SearchBox
               search={search}
               onChange={onChange}
               onSubmit={onSubmit}
               categories={categories}
-              />}
-              
-            </Popover.Group>
-            <Link to="/addictions" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
+              />} */}
 
-          
-Tratamientos
-  </Link>
+            </Popover.Group>
+            <Link to="/index" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
+
+
+inicio
+</Link>
+            <Link to="/about" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
+
+
+Quiénes somos
+</Link>
   <Link to="/programmes" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
 
-          
+
 Programas
+  </Link>
+
+  <Link to="/addictions" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
+
+
+Tratamientos
   </Link>
             <div className="flex items-center md:ml-12">
     <Link to="/cart">
@@ -269,7 +280,7 @@ Programas
 
    </div>
  </div>
- 
+
  </div>
 
       <Transition

@@ -30,10 +30,10 @@ const Layout = (props) => {
 
     return(
         <div>
-            <Navbar/>
+            
             <ToastContainer autoClose={5000}/>
             {props.children}
-            <Footer/>
+            
         </div>
     )
 

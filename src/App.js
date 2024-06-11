@@ -3,7 +3,8 @@ import store from "./store";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Error404 from "./containers/errors/Error404";
 import Home from "./containers/Home";
-
+import Navbar from "./components/navigation/Navbar";
+import { Footer } from "./components/navigation/Footer";
 import Signup from './containers/auth/Signup';
 import Login from './containers/auth/Login';
 import Activate from './containers/auth/Activate';
@@ -29,15 +30,16 @@ import { Tecnologia } from "./containers/treatments/Tecnologia";
 import { Sexo } from "./containers/treatments/Sexo";
 import { Ludopata } from "./containers/treatments/Ludopata";
 import { PastaBase } from "./containers/treatments/Pasta_base";
-
+import {  Index} from "./containers/pages/index";
+import {  About} from "./containers/pages/about"
 
 function App() {
   return (
     <Provider store={store}>
     <Router>
+    <Navbar />
         <Routes>
             <Route path="*" element={<Error404/>}/>
-
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/cart' element={<Cart/>}/>
             <Route exact path='/checkout' element={<Checkout/>}/>
@@ -57,6 +59,8 @@ function App() {
           <Route exact path='/dashboard/payment/:transaction_id' element={<DashboardPaymentDetail/>}/>
           <Route exact path='/thankyou' element={<ThankYou/>}/>    
           <Route exact path='/dashboard/profile' element={<DashboardProfile/>}/>      
+           {/* nav bar rutas*/}
+          
           <Route exact path='/programmes' element={<Programmes/>}/> 
           <Route exact path='/addictions'element={<Addictions/>}/>
           <Route exact path='/alcohol'element={<Alcohol/>}/>
@@ -67,7 +71,10 @@ function App() {
         <Route path="/sexo" element={<Sexo />} />
         <Route path="/ludopata" element={<Ludopata />} />
         <Route path="/pasta_base" element={<PastaBase />} />
+        <Route path="/index" element={<Index />} />
+        <Route path="/about" element={<About />}/>
         </Routes>
+        <Footer />
     </Router>
     </Provider>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const NAME = "Shasam expertos en alcoholismo";
 const parrafo1 ="El alcohol es la sustancia legal psicoactiva más consumida en Chile y en la gran mayoría de países. Su consumo se relaciona con más de 60 enfermedades.";
 const parrafo2 ="El alcoholismo se manifiesta por la presencia de conductas que demuestran la necesidad y pérdida de libertad frente al alcohol, con dificultad para controlar su consumo. También por la existencia de tolerancia y síndrome de abstinencia. En resumidas cuentas, pierdes el control sobre ti mismo y no tienes la capacidad de dejar de beber alcohol, aunque no paras de proponértelo. Por suerte, existen soluciones."
@@ -27,11 +26,11 @@ const parrafo15 ="El tratamiento del alcoholismo es un trabajo en equipo, donde 
 const parrafo16 ="Las personas con esta adicción, tienen un impacto negativo en el entorno en el que se desenvuelven, pueden producir daños a terceros debido a accidentes de tráfico, conductas violentas con familiares, amigos, compañeros de trabajo e incluso desconocidos, etc.";
 const parrafo17 ="Las razones para dejar de beber son muchas, principalmente porque el alcohol es tóxico y causa daños irreparables al organismo cuando su consumo es crónico, otras razones por las cuales se debe dejar de consumir alcohol porque es una sustancia adictiva y neurotóxico, que puede provocar cáncer, problemas emocionales, conflictos inter-personales y en el trabajo o apatía severa. Al mismo tiempo, es la sustancia que da entrada a otras adicciones.";
 const parrafo18 ="Los problemas de alcohol pueden superarse, siempre que el alcohólico acepte que está enfermo y permita la intervención del equipo multidisciplinar para ayudarlo a superar la adicción al consumo de alcohol. Los beneficios de dejar de beber alcohol incluyen:";
-const li_1 ="– Favorece el estado de ánimo";
-const li_2 ="– Disminuye el daño al estómago, páncreas e hígado";
-const li_3 ="– Mejora y fortalece el sistema inmunológico";
-const li_4 ="– Mejora el aspecto de la piel";
-const li_5 ="– Estimula la memoria y la concentración";
+const li_1 ="Favorece el estado de ánimo";
+const li_2 ="Disminuye el daño al estómago, páncreas e hígado";
+const li_3 ="Mejora y fortalece el sistema inmunológico";
+const li_4 ="Mejora el aspecto de la piel";
+const li_5 ="Estimula la memoria y la concentración";
 const parrafo19 ="Todos estos beneficios generan un cambio ultra positivo y global en el paciente, recupera la felicidad y ganas de vivir, se relaciona con los demás de forma mucho más positiva y natural, se vuelve mucho más capacitado para el empleo, deja atrás deudas y problemas derivados de las adicciones.";
 
 
@@ -41,11 +40,98 @@ export const Alcohol = () => {
     return (
       <div>
        
-<p>{NAME}</p>
+       <div className='mb-3 sm:ml-3 sm:mb-0 even:bg-gray-50 odd:bg-white'>
+        <div className="flex-1">
+          <h1 className="text-sky-400 text-5xl font-medium">
+            {NAME}
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo1}</p>
+            </p>
+ 
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo2}</p>
+            </p>
 
-
-
-    
+            <h1 className="text-sky-400 text-5xl font-medium">
+            {NAME1}
+            </h1>
+          <br></br>
+          <h1 className="text-sky-400 text-5xl font-small">
+            {NAME2}
+          </h1>
+          <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo3}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo4}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo5}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo6}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo7}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo8}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo9}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo10}</p>
+            </p>
+            <h1 className="text-justify space-y-4 text-xl m-5">
+            <h1>{titulo1}</h1>
+            </h1>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo12}</p>
+            </p>
+            <h1 className="text-justify space-y-4 text-xl m-5">
+            <h1>{titulo2}</h1>
+            </h1>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo13}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{titulo3}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo14}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo15}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo16}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo17}</p>
+            </p>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo18}</p>
+            </p>
+            <li className="text-justify space-y-4 text-xl m-5">
+            {li_1} </li>
+            <li className="text-justify space-y-4 text-xl m-5">
+            {li_2}
+            </li>
+            <li className="text-justify space-y-4 text-xl m-5">
+            {li_3}
+            </li>
+            <li className="text-justify space-y-4 text-xl m-5">
+            {li_4}
+            </li>
+            <li className="text-justify space-y-4 text-xl m-5">
+            {li_5}</li>
+            <p className="text-justify space-y-4 text-xl m-5">
+            <p>{parrafo19}</p>
+            </p>
+  </div>
+    </div>
       </div>
     );
   }
