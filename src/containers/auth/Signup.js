@@ -1,8 +1,9 @@
 import Layout from '../../hocs/Layout'
 import { useState, useEffect } from 'react'
-
+import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
 import { signup } from '../../redux/actions/auth'
+import { Login } from '../../redux/actions/auth'
 
 function Signup  ({
   signup
@@ -48,8 +49,13 @@ function Signup  ({
             src="logo_shasam.png"
             alt="Workflow"
           />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Register</h2>
-          
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Registrarse</h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+          O{' '}
+            <Link to="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+              Iniciar secion
+            </Link>
+            </p>
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -104,7 +110,7 @@ function Signup  ({
 
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                  Password
+                  Contraseña
                 </label>
                 <div className="mt-1">
                   <input
@@ -120,7 +126,7 @@ function Signup  ({
               
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                  Repeat Password
+                  Repetir contraseña
                 </label>
                 <div className="mt-1">
                   <input
@@ -138,7 +144,7 @@ function Signup  ({
                   type="Submit"
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Register
+                  Registrarse
                 </button>
               </div>
             </form>

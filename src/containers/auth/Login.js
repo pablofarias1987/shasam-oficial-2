@@ -46,11 +46,11 @@ const Login = ({
             src="logo_shasam.png"
             alt="Workflow"
           />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Iniciar secion en tu cuenta</h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Or{' '}
+            O{' '}
             <Link to="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
-              register
+              registrarse
             </Link>
           </p>
         </div>
@@ -126,7 +126,7 @@ const Login = ({
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Login
+              Iniciar
             </button>}
               </div>
             </form>

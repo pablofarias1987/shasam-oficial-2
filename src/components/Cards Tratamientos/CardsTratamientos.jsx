@@ -2,6 +2,15 @@ import { Link } from "react-router-dom";
 
 export const CardsTratamiento = () => {
   return (
+<div>
+    <div className="relative overflow-hidden h-60">
+    <img
+      className="w-full absolute opacity-50 -top-96 left-1/2 transform -translate-x-1/2"
+      src="quienessomos.jpeg"
+      alt="imagen-sitio"
+    />
+  </div> 
+
     <div className="overflow-x-auto font-medium ml-28 mt-10 text-sky-600 text-5xl">
       Tratamientos
       <div className="flex space-x-11 text-2xl text-center text-gray-600 mx-6 mt-6">
@@ -97,6 +106,8 @@ export const CardsTratamiento = () => {
         </div>
         
       </div>
+    </div>  <br/><br/><br/>
     </div>
+  
   );
 };

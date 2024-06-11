@@ -110,7 +110,7 @@ const navigation = {
   
   export function Footer() {
     return (
-      <footer className="bg-white" aria-labelledby="footer-heading">
+      <footer className="bg-sky-300" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -119,7 +119,7 @@ const navigation = {
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                  <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Solutions</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
@@ -131,7 +131,7 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                  <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Support</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
@@ -145,7 +145,7 @@ const navigation = {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                  <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Company</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
@@ -157,7 +157,7 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                  <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Legal</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
@@ -171,7 +171,7 @@ const navigation = {
               </div>
             </div>
             <div className="mt-8 xl:mt-0">
-              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
                 Subscribe to our newsletter
               </h3>
               <p className="mt-4 text-base text-gray-500">
@@ -210,7 +210,7 @@ const navigation = {
                 </a>
               ))}
             </div>
-            <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+            <p className="mt-8 text-base text-gray-600 md:mt-0 md:order-1">
               &copy; 2024 Workflow, Inc. All rights reserved.
             </p>
           </div>

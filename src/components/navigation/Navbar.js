@@ -197,19 +197,19 @@ function classNames(...classes) {
     const guestLinks = (
       <Fragment>
         <Link to="/login" className="text-base font-medium text-gray-500 hover:text-gray-900">
-          Sign in
+          Iniciar secion
         </Link>
         <Link
           to="/signup"
           className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
         >
-          Sign up
+          Registrarse
         </Link>
 
       </Fragment>
     )
   return (<>
-    <Popover className="relative bg-white">
+    <Popover className="bg-sky-300 ">
       <div className="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true" />
       <div className="relative z-20">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
@@ -252,7 +252,7 @@ function classNames(...classes) {
 
 inicio
 </Link>
-            <Link to="/about" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
+<Link to="/about" className="hidden md:flex-2 md:flex md:items-center md:justify-between">
 
 
 Quiénes somos
@@ -308,7 +308,7 @@ Tratamientos
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="sr-only">Close menu</span>
+                    <span className="sr-only">Cerrar menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
@@ -332,7 +332,7 @@ Tratamientos
                   <div className="mt-8 text-base">
                     <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                       {' '}
-                      View all products <span aria-hidden="true">&rarr;</span>
+                      Ver todos los terapeutas <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
                 </nav>
@@ -369,12 +369,12 @@ Tratamientos
                   href="#"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >
-                  Sign up
+                 Registrarse
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
+                    Iniciar secion
                   </a>
                 </p>
               </div>
